@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Transversing</title>
+    <script>
+        let data = [12,23,65,78,90,23,45,61]
+        for(let i=0;  i < data.length; i++){
+          console.log(data[i])
+        }
+
+        function getElement(){
+            let ele = document.getElementById('element').value
+            if(ele > data.length){
+                alert(`Invalid Length number must be smaller than equal to ${data.length}`)
+            }else{
+                alert(data[ele])
+            }
+            
+        }
+    </script>
+</head>
+<body style="background-color: black; color: white;" >
+         <input type="text" placeholder="Enter Number" id="element" >
+         <button onclick="getElement()" >Get Number</button>
+</body>
+</html>
+
+
