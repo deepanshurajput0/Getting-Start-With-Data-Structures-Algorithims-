@@ -7,7 +7,6 @@ const moves = ['Stone', 'Paper', 'Sicssors'];
 
 
 
-let Score = 0;
 
 
 // Check if the player's move is valid
@@ -28,7 +27,6 @@ if (!moves.includes(playerMove)) {
         (playerMove === 'Sicssors' && computerMove === 'Paper')
     ) {
         console.log('Congratulations, you win!');
-         Score + 1
         audio1.play();
     } else {
         console.log('You lose, try again.');
