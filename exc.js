@@ -2,12 +2,14 @@ const students = ['abhay','chirag','vivek','insan','shivam']
 
 
 function getStudent(students, studentName){
-     const student = students.find((item,i)=>item === studentName)
-     if(student){
-        console.log(student)
-     }else{
-        console.log('Student is not present')
+     for(let i=0; i<students.length; i++){
+        if(students[i] === studentName){
+            console.log('Its present')
+        }else{
+            console.log('not present')
+        }
      }
 }
 
-getStudent(students,'shivam')
+
+getStudent(students,'shiva')
