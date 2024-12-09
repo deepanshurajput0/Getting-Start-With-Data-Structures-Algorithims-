@@ -37,3 +37,15 @@ function isPalindrome(name){
 
 isPalindrome('sos')
 
+
+
+// Int Reversal 
+
+function ReverseInt (num){
+    const myNum = String(num)
+    const reversed = myNum.split("").reverse().join('')
+    const result = Number(reversed)
+    console.log('This is reversed Number', result)
+}
+
+ReverseInt(12334)
