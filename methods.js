@@ -67,3 +67,26 @@ function sentencCapitalize(fname,lname){
    }
 
 sentencCapitalize('deep','verma')
+
+
+function sentenceCapitalize2(fname, lname) {
+   const firstName = fname.charAt(0).toUpperCase() + fname.slice(1);
+   const lastName = lname.charAt(0).toUpperCase() + lname.slice(1);
+   console.log(firstName + " " + lastName);
+}
+
+
+const fizbuzz =(n)=>{
+  for(let i=0; i<=n; i++){
+      if(i%3===0){
+         console.log('Fizz')
+      }else if(i%5===0){
+         console.log('Buzz')
+      }else if(i%3===0 && i%5===0){
+         console.log('fizzBuzz')
+      }else{
+         console.log(i)
+      }
+  }
+}
+fizbuzz(10)
