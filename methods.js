@@ -49,3 +49,21 @@ function ReverseInt (num){
 }
 
 ReverseInt(12334)
+
+
+// Sentence Capitalization 
+
+
+function sentencCapitalize(fname,lname){
+    const fchar = fname.split('')[0] 
+    const lchar = lname.split('')[0]
+    const fsplit =  fname.split('')
+    const lsplit = lname.split('')
+     fsplit.splice(0,1)
+     lsplit.splice(0,1)
+    const firstName = fchar.toUpperCase() + fsplit.join('')
+    const lastName = lchar.toUpperCase() + lsplit.join('')
+    console.log(firstName + " " +lastName)
+   }
+
+sentencCapitalize('deep','verma')
