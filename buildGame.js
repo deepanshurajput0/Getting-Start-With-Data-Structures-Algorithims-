@@ -8,8 +8,6 @@ const moves = ['Stone', 'Paper', 'Sicssors'];
 
 
 
-
-// Check if the player's move is valid
 if (!moves.includes(playerMove)) {
     console.log('Invalid move. Please enter Stone, Paper, or Sicssors.');
 } else {

@@ -90,3 +90,12 @@ const fizbuzz =(n)=>{
   }
 }
 fizbuzz(10)
+
+
+const chunkArray=(arr,chunk)=>{
+   const splitArr = arr.length / chunk
+   
+
+}
+
+chunkArray([12,3,6,89,9,3],2)
