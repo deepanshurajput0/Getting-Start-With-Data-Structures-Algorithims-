@@ -49,12 +49,19 @@ class LinkedList{
         return temp
 
     }
+    unshift(value){
+      const newNode = new node(value)
+      newNode.next = this.head
+      this.head = newNode
+      this.length ++
+      return this;
+    }
    
 }
 
 const linkedlist = new LinkedList(1)
 linkedlist.push(10)
-linkedlist.pop()
+linkedlist.unshift(5)
 console.log(linkedlist)
 
 
