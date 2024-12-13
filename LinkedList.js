@@ -56,12 +56,19 @@ class LinkedList{
       this.length ++
       return this;
     }
+    shift(){
+      let temp = this.head
+      this.head = this.head.next
+      temp.next = null
+      this.length --
+
+    }
    
 }
 
 const linkedlist = new LinkedList(1)
 linkedlist.push(10)
-linkedlist.unshift(5)
+linkedlist.shift()
 console.log(linkedlist)
 
 
