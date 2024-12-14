@@ -106,6 +106,12 @@ class LinkedList{
      this.length++
      return true
    }
+   clear(){
+    this.head = null
+    this.tail = null
+    this.head.next = null
+    this.length= 0
+  }
 }
 
 const linkedlist = new LinkedList(1)
