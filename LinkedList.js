@@ -63,12 +63,17 @@ class LinkedList{
       this.length --
 
     }
-   
+    getFirst(){
+      return this.head
+    }
+   getLast(){
+    return this.tail
+   }
 }
 
 const linkedlist = new LinkedList(1)
 linkedlist.push(10)
-linkedlist.shift()
+// linkedlist.shift()
 console.log(linkedlist)
 
 
