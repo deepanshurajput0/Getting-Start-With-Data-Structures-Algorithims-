@@ -11,6 +11,7 @@ class node {
 
 class LinkedList{
     constructor(value){
+     const newNode = new node(value)
      this.head = new node(value)
      this.tail = this.head
      this.length = 1
@@ -81,11 +82,22 @@ class LinkedList{
      }
      return null;
    }
+   set(index,value){
+    let current = this.get(index)
+    if(current){
+      current.head = value
+      return true
+    }else{
+      return false
+    }
+
+   }
 }
 
 const linkedlist = new LinkedList(1)
 linkedlist.push(10)
-console.log(linkedlist.get(2))
+linkedlist.set(2,12)
+console.log(linkedlist)
 
 
 
