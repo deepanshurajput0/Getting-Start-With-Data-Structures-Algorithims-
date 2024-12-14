@@ -92,11 +92,26 @@ class LinkedList{
     }
 
    }
+   insert(index,value){
+     if(index===0){
+      this.unshift(value)
+     }
+     if(index === this.length){
+      this.push(value)
+     }
+     const newNode = new node(value)
+     const temp = this.get(index-1)
+     newNode.next = temp.next
+     temp.next = newNode
+     this.length++
+     return true
+   }
 }
 
 const linkedlist = new LinkedList(1)
 linkedlist.push(10)
-linkedlist.set(2,12)
+// linkedlist.set(2,12)
+// linkedlist.insert()
 console.log(linkedlist)
 
 
