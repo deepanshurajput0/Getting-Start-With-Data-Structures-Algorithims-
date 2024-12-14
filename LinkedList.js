@@ -69,12 +69,23 @@ class LinkedList{
    getLast(){
     return this.tail
    }
+   get(index){
+    let temp = this.head
+     let counter = 1
+     while(temp){
+       if(counter === index){
+        return temp
+       }
+       counter++
+       temp = temp.next
+     }
+     return null;
+   }
 }
 
 const linkedlist = new LinkedList(1)
 linkedlist.push(10)
-// linkedlist.shift()
-console.log(linkedlist)
+console.log(linkedlist.get(2))
 
 
 
