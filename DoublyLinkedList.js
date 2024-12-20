@@ -27,13 +27,28 @@ class DoublyLinkedList {
         this.length++; 
         return this;
     }
+    pop(){
+        let temp = this.tail
+        if(this.length ===0){
+            return undefined
+        }
+        if(!this.length === 1){
+            this.head = null
+            this.tail = null
+        }
+        this.tail = this.tail.prev
+        this.tail.next = null
+        temp.prev = null
+        this.length--
+        return temp
+    }
 }
 
 const myDoublyLinkedList = new DoublyLinkedList(1);
 myDoublyLinkedList.push(2);
 myDoublyLinkedList.push(3);
 myDoublyLinkedList.push(4);
-
+myDoublyLinkedList.pop()
 console.log(myDoublyLinkedList);
 
 
