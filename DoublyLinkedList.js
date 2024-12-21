@@ -70,6 +70,19 @@ class DoublyLinkedList {
         this.length--
         return temp
     }
+    reverse(){
+      let temp = this.head
+      this.head = this.tail
+      this.tail = temp
+      let next = temp
+      let prev = null
+      for(let i=0; i<this.length;i++){
+        next = temp.next
+        temp.next = prev
+        prev = temp
+        temp = next 
+      }
+    }
 }
 
 const myDoublyLinkedList = new DoublyLinkedList(1);
@@ -77,8 +90,9 @@ myDoublyLinkedList.push(2);
 myDoublyLinkedList.push(3);
 myDoublyLinkedList.push(4);
 // myDoublyLinkedList.pop()
-myDoublyLinkedList.shift()
+// myDoublyLinkedList.shift()
 // myDoublyLinkedList.unshift(10)
+myDoublyLinkedList.reverse()
 console.log(myDoublyLinkedList);
 
 
