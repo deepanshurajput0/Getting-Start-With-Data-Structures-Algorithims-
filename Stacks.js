@@ -17,7 +17,7 @@ class Stack {
      if(this.length ===0){
         this.first = newNode
      }else{
-     newNode.next = newNode
+     newNode.next = this.first
      this.first = newNode
      this.length++
      return this
