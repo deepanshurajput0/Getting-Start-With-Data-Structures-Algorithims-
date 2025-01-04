@@ -50,3 +50,18 @@ function totalSum(n){
 }
 
 totalSum(4)
+
+
+// Create a function that takes in an array of numbers and returns the sum of its cubes.
+
+
+function sumOfCubes(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum = sum + numbers[i] ** 3;
+    }
+    return sum; // Return the sum instead of logging it
+}
+
+// Example usage
+console.log(sumOfCubes([1,5,9])); 
