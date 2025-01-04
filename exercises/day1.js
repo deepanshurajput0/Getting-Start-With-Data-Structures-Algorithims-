@@ -60,8 +60,25 @@ function sumOfCubes(numbers) {
     for (let i = 0; i < numbers.length; i++) {
         sum = sum + numbers[i] ** 3;
     }
-    return sum; // Return the sum instead of logging it
+    return sum; 
 }
 
-// Example usage
 console.log(sumOfCubes([1,5,9])); 
+
+
+
+
+// Create a function that takes an integer and returns the factorial of that integer. That is, the integer multiplied by all positive lower integers.
+
+
+
+
+function factorial(n){
+    let fac = 1
+  for(let i =1; i<=n; i++){
+     fac = fac * i
+  }
+  console.log(fac)
+}
+
+factorial(5)
