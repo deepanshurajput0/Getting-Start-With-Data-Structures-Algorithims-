@@ -17,3 +17,41 @@ function myNumbers(numbers) {
 myNumbers([90, 13, 2, 34, 10, 254, 21]);
 
 
+
+// Create a function which returns the number of true values there are in an array.
+
+
+// function countTruthyValues(values){
+//     let count = 0
+//   for(let i=0; i<values.length; i++){
+//     if(!values[i] === false){
+//       count++
+//     }else if(!values[i] === undefined){
+//         count ++
+//     }else if(!values[i] === 0){
+//       count++
+//     }else if(!values[i] === " " || "" ){
+//       count++
+//     }else if(!values[i] === NaN){
+//       count++
+//     }
+//   }
+//   console.log('No of truthy values',count)
+
+// }
+
+// countTruthyValues([false,false,true,true,0,1])
+
+
+
+function countTruthyValues(values) {
+    let count = 0;
+    for (let i = 0; i < values.length; i++) {
+        if (values[i]) {  
+            count++;
+        }
+    }
+    console.log('No of truthy values', count);
+}
+
+countTruthyValues([false, false, true, true, 0, 1, undefined,2,{}]);
