@@ -8,13 +8,13 @@
 // minMax([1]) ➞ [1, 1]
 
 
-function myNumbers(numbers) {
-    let sortedNumbers = numbers.sort((a, b) => a - b);
-    let newArr = [sortedNumbers[0], sortedNumbers[sortedNumbers.length - 1]];
-    console.log(newArr);
-}
+// function myNumbers(numbers) {
+//     let sortedNumbers = numbers.sort((a, b) => a - b);
+//     let newArr = [sortedNumbers[0], sortedNumbers[sortedNumbers.length - 1]];
+//     console.log(newArr);
+// }
 
-myNumbers([90, 13, 2, 34, 10, 254, 21]);
+// myNumbers([90, 13, 2, 34, 10, 254, 21]);
 
 
 
@@ -44,14 +44,26 @@ myNumbers([90, 13, 2, 34, 10, 254, 21]);
 
 
 
-function countTruthyValues(values) {
-    let count = 0;
-    for (let i = 0; i < values.length; i++) {
-        if (values[i]) {  
-            count++;
-        }
-    }
-    console.log('No of truthy values', count);
+// function countTruthyValues(values) {
+//     let count = 0;
+//     for (let i = 0; i < values.length; i++) {
+//         if (values[i]) {  
+//             count++;
+//         }
+//     }
+//     console.log('No of truthy values', count);
+// }
+
+// countTruthyValues([false, false, true, true, 0, 1, undefined,2,{}]);
+
+
+
+function decimalToBinary(number){
+    let binary = 0
+   for( let i=0; i<number.length; i++){
+      binary = number[i] / i
+   }
+   console.log(binary)
 }
 
-countTruthyValues([false, false, true, true, 0, 1, undefined,2,{}]);
+decimalToBinary([25])
