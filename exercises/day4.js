@@ -81,3 +81,20 @@ const addFive =  functionMaker(5)
 let result3 = addFive(5)
 console.log(result3)
 
+
+
+
+// Create a function that takes an array of numbers and return "Boom!" if the digit 7 appears in the array. Otherwise, return "there is no 7 in the array".
+
+
+function NumberChecker(arr) {
+    for (let num of arr) {
+        if (num.toString().includes('7')) {
+            return 'Boom!';
+        }
+    }
+    return 'There is no 7 in the array';
+}
+
+let result4 = NumberChecker([1, 2, 3, 2, 71]);
+console.log(result4);
