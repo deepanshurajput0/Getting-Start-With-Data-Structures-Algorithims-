@@ -98,3 +98,32 @@ function NumberChecker(arr) {
 
 let result4 = NumberChecker([1, 2, 3, 2, 71]);
 console.log(result4);
+
+
+
+// A boomerang is a V-shaped sequence that is either upright or upside down. Specifically, a boomerang can be defined as: sub-array of length 3, with the first and last digits being the same and the middle digit being different.
+
+
+function countBoomerangs(arr) {
+  let boomerangCount = 0; // Initialize a counter for boomerangs.
+
+  // Loop through the array with a sliding window of size 3.
+  for (let i = 0; i < arr.length - 2; i++) {
+    // Extract the triplet: arr[i], arr[i+1], arr[i+2].
+    let first = arr[i];
+    let middle = arr[i + 1];
+    let last = arr[i + 2];
+
+    // Check if it's a boomerang.
+    if (first === last && first !== middle) {
+      boomerangCount++; // Increment counter if it's a boomerang.
+    }
+  }
+
+  return boomerangCount; // Return the total count of boomerangs.
+}
+
+// Example usage:
+console.log(countBoomerangs([3, 7, 3, 1, -1, 1, 5, 6, 5])); // Output: 3
+console.log(countBoomerangs([1, 2, 1, 2, 1, 2])); // Output: 3
+console.log(countBoomerangs([1, 2, 3])); // Output: 0
