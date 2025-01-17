@@ -56,14 +56,23 @@ function numInStr(arr) {
 //   Create a function that takes a variable number of arguments, each argument representing the number of items in a group. The function should return the number of permutations (combinations) of choices you would have if you selected one item from each group.
 
 
-function permutations(...digits) {
-    let result = 1;
-    for (let i = 0; i < digits.length; i++) {
-      result *= digits[i];
-    }
-    return result;
-  }
-  console.log(permutations(2, 4)); 
-  console.log(permutations(2, 3, 5));
-  console.log(permutations()); 
+// function permutations(...digits) {
+//     let result = 1;
+//     for (let i = 0; i < digits.length; i++) {
+//       result *= digits[i];
+//     }
+//     return result;
+//   }
+//   console.log(permutations(2, 4)); 
+//   console.log(permutations(2, 3, 5));
+//   console.log(permutations()); 
   
+
+  // find factorial of any number
+
+function findFactorial(n){
+  for(let i=1; i<n; i++){
+        console.log(i) 
+  }
+}
+findFactorial(4)
