@@ -52,10 +52,18 @@ function numInStr(arr) {
   console.log(result3);
   
 
-  const nums =['2','3','2a','a']
- 
-  for(let i=0; i<nums.length; i++){
-     if(!isNaN(nums)){
-        console.log(nums[i])
-     }
+
+//   Create a function that takes a variable number of arguments, each argument representing the number of items in a group. The function should return the number of permutations (combinations) of choices you would have if you selected one item from each group.
+
+
+function permutations(...digits) {
+    let result = 1;
+    for (let i = 0; i < digits.length; i++) {
+      result *= digits[i];
+    }
+    return result;
   }
+  console.log(permutations(2, 4)); 
+  console.log(permutations(2, 3, 5));
+  console.log(permutations()); 
+  
