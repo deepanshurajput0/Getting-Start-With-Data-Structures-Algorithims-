@@ -79,21 +79,7 @@ for(let i=1; i<=num; i++){
   
 
 
-//   Write a function that counts how many concentric layers a rug has.
 
 
-function countLayers(myArr){
-  const newArray = []
-  const uniqueValues = new Set(myArr)
-   uniqueValues.forEach((item)=>(
-      newArray.push(item)
-   ))
-   console.log(newArray)
-}
-countLayers([
-   "AAAA",
-   "ABBA",
-   "AAAA"
- ])
 
 
