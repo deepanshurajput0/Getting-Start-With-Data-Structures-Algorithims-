@@ -98,3 +98,20 @@ let result3 = SearchElement(7)
 console.log(result3)
 
 
+/// merge two arrays 
+
+
+const myarr1 = [10,20,43,56,43,65,44]
+const myarr2 = [90,43,53,23,5,46,6]
+const myarr3 = []
+
+for(let i=0; i<myarr1.length; i++){
+     myarr3[i] = myarr1[i]
+}
+for(let i=0; i<myarr2.length; i++){
+    myarr3[myarr1.length+i] = myarr2[i]
+}
+console.log(myarr3)
+
+
+
