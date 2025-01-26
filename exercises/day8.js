@@ -49,6 +49,32 @@ console.log(myNumbers)
 
 
 
+// Reverse an Array
+// Reverse the elements of an array without using any additional space.
+
+// const myArr = [10,234,4,3,2,32]
+
+// for(let i=myArr.length; i>=0; i--){
+//    console.log(myArr[i])
+// }
+
+
+// Find the Frequency of Elements
+// Count the frequency of each element in the array.
+
+const arr = [2,3,4,2,13,21,3,2]
+
+const frequency = {}
+
+for(let i=0; i<arr.length; i++){
+  const element = arr[i]
+  if(frequency[element]){
+     frequency[element]++
+  }else{
+     frequency[element]=1
+  }
+}
+console.log(frequency)
 
 
 
