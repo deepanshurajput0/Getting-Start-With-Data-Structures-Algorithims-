@@ -14,6 +14,11 @@ function checkWinner(){
 
     ){
         document.write(`Winner is ${currentPlayer}`)
+        return
+    }
+    const nullArray = array.some(el=>el === null)
+    if(!nullArray){
+        document.write('Draw Try Again')
     }
 }
 
