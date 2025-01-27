@@ -9,10 +9,15 @@
           border: 2px solid black;
           height: 100px;
           width: 100px;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          font-size: 40px;
+          padding-top: 10px;
         }
         .col{
             display: flex;
             justify-content: center;
+
         }
         .container{
             margin-top: 40px;
@@ -22,20 +27,21 @@
 <body>
     <div class="container">
         <div class="col">
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div id="0" onclick="handleClick(this)" class="row"></div>
+            <div id="1" onclick="handleClick(this)" class="row"></div>
+            <div id="2" onclick="handleClick(this)" class="row"></div>
         </div>
         <div class="col">
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div id="3" onclick="handleClick(this)" class="row"></div>
+            <div id="4" onclick="handleClick(this)" class="row"></div>
+            <div id="5" onclick="handleClick(this)" class="row"></div>
         </div>
         <div class="col">
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
+            <div id="6" onclick="handleClick(this)" class="row"></div>
+            <div id="7" onclick="handleClick(this)" class="row"></div>
+            <div id="8" onclick="handleClick(this)" class="row"></div>
         </div>
     </div>
+    <script src="./script.js" ></script>
 </body>
 </html>
