@@ -29,3 +29,26 @@ for(let i=0; i<myData2.length; i++){
     }
 }
 console.log(myData2)
+
+
+// Sort an Array of Objects by a Property
+
+// Problem: You have an array of objects, and you need to sort them by a specific property (e.g., name or age).
+
+
+const people = [
+    { name: "John", age: 25 },
+    { name: "Alice", age: 30 },
+    { name: "Bob", age: 20 }
+  ];
+
+  for(let i=0; i<people.length; i++){
+       for(let j=0; j<people.length-1; j++){
+          if(people[j].age > people[j+1].age){
+            let temp = people[j];
+            people[j] = people[j+1]
+            people[j+1] = temp
+          }
+       }
+  }
+  console.log(people)
