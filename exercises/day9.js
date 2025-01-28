@@ -52,3 +52,37 @@ const people = [
        }
   }
   console.log(people)
+
+
+
+//   Sort an Array of Numbers in Custom Order
+
+//   Problem: Given two arrays, the second array contains a custom order. Sort the first array according to the order specified in the second array, keeping the same relative order of items.
+
+// arr1 = [1, 2, 3, 4, 5];
+// arr2 = [4, 3, 2, 1, 5];  
+
+
+
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [4, 3, 2, 1, 5];
+
+function sortArray(arr1,arr2){
+  let uniqueValues = [...new Set(arr1,arr2)]
+  let lastValue = uniqueValues[uniqueValues.length-1]
+  for(let i=0; i<uniqueValues.length; i++){
+    for(let j=0; j<uniqueValues.length; j++){
+       if(uniqueValues[j]<uniqueValues[j+1]){
+           let temp = uniqueValues[j]
+           uniqueValues[j] = uniqueValues[j+1]
+           uniqueValues[j+1] = temp
+       }
+    }
+  }
+   uniqueValues.shift()
+   uniqueValues.push(lastValue)
+   return uniqueValues
+  
+}
+let result = sortArray(arr1,arr2)
+console.log(result)
