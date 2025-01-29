@@ -86,3 +86,9 @@ function sortArray(arr1,arr2){
 }
 let result = sortArray(arr1,arr2)
 console.log(result)
+
+
+
+
+
+
