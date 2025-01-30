@@ -26,3 +26,17 @@ function Iteration(i) {
 
 let index = 0;
 Iteration(index);
+
+// Print factorial with Re-cursion
+let num = 5
+function factorial(i,fac){
+    fac = fac * i
+    console.log(fac)
+    if(i<num){
+        factorial(i+1, fac)
+    }
+}
+
+let i = 1
+let fac = 1;
+factorial(i,fac)
