@@ -51,3 +51,20 @@ console.log(biggestNumber);
 
 
 
+/// Callbacks 
+
+function calculateArithmetic(a,b,operations){
+     let answer = operations(a,b)
+     return answer                                                       
+}
+
+function sum(a,b){
+    return a + b;
+}
+
+function sub(a,b){
+   return a - b
+}
+
+const result = calculateArithmetic(3,7,sub)
+console.log(result)
