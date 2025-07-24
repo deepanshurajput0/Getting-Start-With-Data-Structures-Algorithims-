@@ -103,6 +103,7 @@ There’s always only **one Global Execution Context** in any JS program — cre
 
 ---
 
+
 ### In Short:
 
 | Element               | Value                        |
@@ -113,7 +114,7 @@ There’s always only **one Global Execution Context** in any JS program — cre
 | Function Declarations | Hoisted with full definition |
 
 ---
-
+![Screenshot 2025-06-12 142218](https://github.com/user-attachments/assets/4ee00fc2-e64e-4dc1-b5fd-25322f433426)
 
 
 
