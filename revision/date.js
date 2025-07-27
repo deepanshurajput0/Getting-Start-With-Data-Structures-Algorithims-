@@ -10,21 +10,21 @@ console.log(`${date}-${month}-${year}`)
 //Timer 
 
 
-// let seconds = 0;
-// let minutes = 0;
-// let hours = 0;
-// setInterval(()=>{
-//     seconds++ 
-//     if(seconds > 59){
-//      seconds = 0;
-//      minutes++               
-//     }else if(minutes> 59){
-//       minutes = 0;
-//       hours++  
-//     }
-//  const timer = `${hours}:${minutes}:${seconds}`
-//  console.log(timer)
-// },1000)
+let seconds = 0;
+let minutes = 0;
+let hours = 0;
+setInterval(()=>{
+    seconds++ 
+    if(seconds > 59){
+     seconds = 0;
+     minutes++               
+    }else if(minutes> 59){
+      minutes = 0;
+      hours++  
+    }
+ const timer = `${hours}:${minutes}:${seconds}`
+ console.log(timer)
+},1000)
 
 
 
@@ -46,5 +46,17 @@ const afterDate = new Date()
 const afterTime = afterDate.getTime()
 
 console.log(afterDate-beforeDate)
+
+
+const mydata = `{
+    "name":"deepanshu",
+    "role":"software devleoper",
+    "age":21
+}`
+
+const parseData = JSON.parse(mydata)
+console.log(parseData)
+
+
 
 
