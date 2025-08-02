@@ -24,10 +24,27 @@ function sleepSync(){
 }
 
 
-sleepSync();
+// sleepSync();
 
 // setTimeout(findSumIn2Sec,3000)
 
 console.log("hi there")
+
+
+
+
+console.log("Hii There")
+
+let a = 0;
+for(let i=0; i<10000000; i++){
+    a = i + 1;
+}
+console.log(a)
+setTimeout(()=>{
+     console.log("This is async function")
+},1000)
+
+
+console.log("Hii End")
 
 
