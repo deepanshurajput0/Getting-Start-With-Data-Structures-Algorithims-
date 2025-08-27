@@ -24,4 +24,3 @@ sleepSync()
 
 console.log("This is last code line")
 
-

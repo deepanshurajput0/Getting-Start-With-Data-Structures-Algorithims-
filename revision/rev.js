@@ -68,3 +68,6 @@ function sub(a,b){
 
 const result = calculateArithmetic(3,7,sub)
 console.log(result)
+
+
+
