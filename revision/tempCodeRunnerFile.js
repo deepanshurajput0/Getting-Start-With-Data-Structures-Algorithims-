@@ -1,10 +1,1 @@
-  // {
-        //     name:'deepanshu',
-        //     age:21
-        // },{
-        //     name:'chirag',
-        //     age:21
-        // },{
-        //     name:'abhay',
-        //     age:21
-        // }
+
