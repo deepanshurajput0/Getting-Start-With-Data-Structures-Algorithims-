@@ -1,5 +1,7 @@
 // In JavaScript, a Promise is an object that represents an operation that will finish in the future, either successfully or with an error.
 
+import { rejects } from "assert"
+
 // let myPromise = new Promise((reject,resolve)=>{
 //      let success = true;
 //      if(success){
@@ -39,9 +41,9 @@ let p1 = new Promise((resolve)=>{
     },1000)
 })
 
-let p2 = new Promise((resolve)=>{
-    setTimeout(()=>{
-      resolve("This is value 2")  
+let p2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{ 
+      reject(new Error('error in promise'))
     },2000)
 })
 
@@ -54,7 +56,10 @@ let p3 = new Promise((resolve)=>{
 
 
 async function resolvePromise(){
-     const result = await Promise.all([p1,p2,p3])
+    //  const result = await Promise.all([p1,p2,p3])
+    //  const result = await Promise.allSettled([p1,p2,p3])
+    //  const result = await Promise.race([p1,p2,p3])
+     const result = await Promise.any([p1,p2,p3])
      console.log(result)
 }
 
